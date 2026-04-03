@@ -1,0 +1,19 @@
+job_name,build_number,result,duration_sec,timestamp,is_success,is_failure
+build-app,5,SUCCESS,0.39,2026-04-02 22:58:03,True,False
+build-app,4,SUCCESS,0.36,2026-04-02 22:58:02,True,False
+build-app,3,SUCCESS,0.35,2026-04-02 22:58:01,True,False
+build-app,2,SUCCESS,0.84,2026-04-02 22:57:59,True,False
+build-app,1,SUCCESS,0.7,2026-04-02 20:04:19,True,False
+run-tests,5,SUCCESS,0.35,2026-04-02 22:58:11,True,False
+run-tests,4,SUCCESS,0.37,2026-04-02 22:58:10,True,False
+run-tests,3,SUCCESS,0.37,2026-04-02 22:58:10,True,False
+run-tests,2,SUCCESS,0.35,2026-04-02 22:58:09,True,False
+run-tests,1,SUCCESS,0.3,2026-04-02 20:04:25,True,False
+deploy-app,8,SUCCESS,0.31,2026-04-03 12:14:48,True,False
+deploy-app,7,FAILURE,0.36,2026-04-02 22:58:07,False,True
+deploy-app,6,FAILURE,0.4,2026-04-02 22:58:07,False,True
+deploy-app,5,FAILURE,0.4,2026-04-02 22:58:06,False,True
+deploy-app,4,FAILURE,0.36,2026-04-02 22:58:05,False,True
+deploy-app,3,FAILURE,0.26,2026-04-02 20:07:28,False,True
+deploy-app,2,FAILURE,0.34,2026-04-02 20:05:57,False,True
+deploy-app,1,FAILURE,0.37,2026-04-02 20:04:22,False,True

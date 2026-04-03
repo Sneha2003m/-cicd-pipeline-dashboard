@@ -1,0 +1,4 @@
+job_name,total_builds,success_count,failure_count,avg_duration_sec,last_build,success_rate_%,failure_rate_%
+build-app,5,5,0,0.5279999999999999,2026-04-02 22:58:03,100.0,0.0
+deploy-app,8,1,7,0.35,2026-04-03 12:14:48,12.5,87.5
+run-tests,5,5,0,0.348,2026-04-02 22:58:11,100.0,0.0

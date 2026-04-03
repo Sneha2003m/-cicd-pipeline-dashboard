@@ -1,0 +1,19 @@
+job_name,build_number,result,duration_sec,timestamp
+build-app,5,SUCCESS,0.39,2026-04-02 22:58:03
+build-app,4,SUCCESS,0.36,2026-04-02 22:58:02
+build-app,3,SUCCESS,0.35,2026-04-02 22:58:01
+build-app,2,SUCCESS,0.84,2026-04-02 22:57:59
+build-app,1,SUCCESS,0.7,2026-04-02 20:04:19
+run-tests,5,SUCCESS,0.35,2026-04-02 22:58:11
+run-tests,4,SUCCESS,0.37,2026-04-02 22:58:10
+run-tests,3,SUCCESS,0.37,2026-04-02 22:58:10
+run-tests,2,SUCCESS,0.35,2026-04-02 22:58:09
+run-tests,1,SUCCESS,0.3,2026-04-02 20:04:25
+deploy-app,8,SUCCESS,0.31,2026-04-03 12:14:48
+deploy-app,7,FAILURE,0.36,2026-04-02 22:58:07
+deploy-app,6,FAILURE,0.4,2026-04-02 22:58:07
+deploy-app,5,FAILURE,0.4,2026-04-02 22:58:06
+deploy-app,4,FAILURE,0.36,2026-04-02 22:58:05
+deploy-app,3,FAILURE,0.26,2026-04-02 20:07:28
+deploy-app,2,FAILURE,0.34,2026-04-02 20:05:57
+deploy-app,1,FAILURE,0.37,2026-04-02 20:04:22
