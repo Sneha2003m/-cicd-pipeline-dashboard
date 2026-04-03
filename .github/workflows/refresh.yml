@@ -1,0 +1,40 @@
+name: Daily Pipeline Data Refresh
+
+on:
+  schedule:
+    - cron: '0 6 * * *'  # runs every day at 6 AM
+  workflow_dispatch:       # allows manual run too
+
+jobs:
+  refresh-data:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run fetch script
+        env:
+          JENKINS_URL: ${{ secrets.JENKINS_URL }}
+          JENKINS_USER: ${{ secrets.JENKINS_USER }}
+          JENKINS_TOKEN: ${{ secrets.JENKINS_TOKEN }}
+        run: python fetch_data.py
+
+      - name: Run clean script
+        run: python clean_data.py
+
+      - name: Commit updated data
+        run: |
+          git config --global user.email "sneha@example.com"
+          git config --global user.name "Sneha Mehrotra"
+          git add data/
+          git commit -m "Auto refresh pipeline data" || echo "No changes"
+          git push
